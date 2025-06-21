@@ -4,7 +4,7 @@ public class CameraFollow : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Vector3 distance;
-    Transform ball;
+    public Transform ball;
     // Update is called once per frame
     void Update()
     {
