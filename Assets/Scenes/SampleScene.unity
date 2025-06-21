@@ -971,6 +971,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21fa67e5daa9e8b48a38240de21f308c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: {x: 0, y: 0, z: 0}
+  ball: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1285,8 +1287,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0860ae150726e934c9d07538f6a4b76a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 2394602662634872870, guid: 98e8e5b914815ea4a9a12752ceb5a689, type: 3}
+  Ball: {fileID: 0}
   Position: {fileID: 1763509880}
+  follow: {fileID: 330585548}
 --- !u!1001 &529481416
 PrefabInstance:
   m_ObjectHideFlags: 0
