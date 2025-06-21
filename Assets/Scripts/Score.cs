@@ -1,8 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public static Score instance;
+    public Text scoreText;
     void Awake()
     {
         if (instance == null) instance = this;
@@ -11,6 +12,6 @@ public class Score : MonoBehaviour
     public void AddScore(int points)
     {
         point += points;
-        Debug.Log(point);
+        scoreText.text = point.ToString();
     }
 }

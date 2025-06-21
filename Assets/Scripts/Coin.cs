@@ -5,7 +5,7 @@ public class Coin : MonoBehaviour
     public int scores;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
             Score.instance.AddScore(scores);
             Invoke("RemoveCoin", 0.2f);
@@ -13,7 +13,7 @@ public class Coin : MonoBehaviour
     }
     void RemoveCoin()
     {
-        Destroy(this);
+        Destroy(gameObject);
     }
 }
 
