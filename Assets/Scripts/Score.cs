@@ -8,7 +8,7 @@ public class Score : MonoBehaviour
         if (instance == null) instance = this;
     }
     int point=0;
-    void AddScore(int points)
+    public void AddScore(int points)
     {
         point += points;
         Debug.Log(point);

@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public int score;
+    public int scores;
     private void OnTriggerEnter(Collider other)
     {
-        if (gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
-            Score.instance.AddScore(score);
+            Score.instance.AddScore(scores);
             Invoke("RemoveCoin", 0.2f);
         }
     }

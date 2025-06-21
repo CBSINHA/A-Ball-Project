@@ -1356,6 +1356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin_pile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a895327a035c67e489e9eb41cfe402d9, type: 3}
+      propertyPath: m_TagString
+      value: Coin
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a895327a035c67e489e9eb41cfe402d9, type: 3}
       propertyPath: m_LocalScale.x
       value: 20
@@ -3424,6 +3428,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: a895327a035c67e489e9eb41cfe402d9, type: 3}
       propertyPath: m_Name
       value: coin_pile
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a895327a035c67e489e9eb41cfe402d9, type: 3}
+      propertyPath: m_TagString
+      value: Coin
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a895327a035c67e489e9eb41cfe402d9, type: 3}
       propertyPath: m_LocalScale.x
