@@ -12,6 +12,6 @@ public class Score : MonoBehaviour
     public void AddScore(int points)
     {
         point += points;
-        scoreText.text = point.ToString();
+        scoreText.text = "Score: "+point.ToString();
     }
 }
