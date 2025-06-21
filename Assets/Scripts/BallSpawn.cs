@@ -9,6 +9,6 @@ public class BallSpawn : MonoBehaviour
     void Start()
     {
         GameObject go= Instantiate(Ball, Position.position, Quaternion.identity);
-        follow.ball = Ball.transform;
+        follow.ball = go.transform;
     }
 }
