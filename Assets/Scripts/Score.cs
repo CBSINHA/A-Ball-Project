@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class Score : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static Score instance;
+    void Awake()
     {
-        
+        if (instance == null) instance = this;
     }
-
-    // Update is called once per frame
-    void Update()
+    int point=0;
+    void AddScore(int points)
     {
-        
+        point += points;
+        Debug.Log(point);
     }
 }
