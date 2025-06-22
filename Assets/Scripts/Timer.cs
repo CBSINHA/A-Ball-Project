@@ -4,8 +4,8 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public float time = 300;
-    Text remaining;
+    public float time = 300f;
+    public Text remaining;
     void Start()
     {
         remaining.text = "Time: " + time;

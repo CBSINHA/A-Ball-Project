@@ -6,6 +6,7 @@ public class Score : MonoBehaviour
     public Text scoreText;
     void Awake()
     {
+        scoreText.text = "Score: 0";
         if (instance == null) instance = this;
     }
     int point=0;
