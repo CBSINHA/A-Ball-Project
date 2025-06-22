@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     public Text remaining;
     void Start()
     {
-        remaining.text = "Time: " + time;
+        remaining.text = Mathf.CeilToInt(time/60f).ToString()+" : "+Mathf.CeilToInt(time%60f).ToString("00");
     }
 
     // Update is called once per frame
