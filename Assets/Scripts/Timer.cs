@@ -3,20 +3,19 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public float time = 300f;
     public Text remaining;
     void Start()
     {
-        remaining.text = Mathf.CeilToInt(time/60f).ToString()+" : "+Mathf.CeilToInt(time%60f).ToString("00");
+        remaining.text =(time/60f).ToString()+"m : "+Mathf.CeilToInt(time%60f).ToString("00")+"s";
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (time > 0)
         {
-
+            time -= Time.deltaTime;
+            remaining.text =(time / 60f).ToString("0") + "m : " + (time % 60f).ToString("00") + "s";
         }
     }
 }
