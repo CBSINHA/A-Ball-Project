@@ -19,7 +19,7 @@ public class WinLose : MonoBehaviour
         if (Timer.instance.win == true) { win.SetActive(true); restartButton.SetActive(true) ; enabled = false; }
         if (Timer.instance.loose == true) { lost.SetActive(true); restartButton.SetActive(true); enabled = false; }
     }
-    void RestartGame()
+    public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
