@@ -3,19 +3,25 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    public static Timer instance;
+    public Child child;
     public float time = 300f;
     public Text remaining;
+    [HideInInspector] public bool win = false; public bool loose = false;
     void Start()
     {
-        remaining.text =(time/60f).ToString()+"m : "+Mathf.CeilToInt(time%60f).ToString("00")+"s";
+        if (instance == null) instance = this;
+        remaining.text =((int)(time/60f)).ToString()+"m : "+((int)(time%60f)).ToString("00")+"s";
     }
-
+    
     void Update()
     {
-        if (time > 0)
+        if (time > 0f)
         {
             time -= Time.deltaTime;
-            remaining.text =(time / 60f).ToString("0") + "m : " + (time % 60f).ToString("00") + "s";
+            remaining.text = ((int)(time / 60f)).ToString() + "m : " + ((int)(time % 60f)).ToString("00") + "s";
+            if (child.allcollected) win = true;
         }
+        else loose = true;
     }
 }

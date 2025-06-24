@@ -1235,6 +1235,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 438597502}
+  - component: {fileID: 438597503}
   m_Layer: 0
   m_Name: Coins
   m_TagString: Untagged
@@ -1275,6 +1276,19 @@ Transform:
   - {fileID: 529481417}
   m_Father: {fileID: 472108929}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &438597503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438597501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef7eddd252930e4dbee045ed109e44d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allcollected: 0
 --- !u!1001 &447138925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1373,6 +1387,7 @@ GameObject:
   - component: {fileID: 472108930}
   - component: {fileID: 472108931}
   - component: {fileID: 472108932}
+  - component: {fileID: 472108933}
   m_Layer: 0
   m_Name: Main Plot
   m_TagString: Coin
@@ -1440,8 +1455,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 629d24dc66083ff4c984ce74a997aeb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 10
+  child: {fileID: 438597503}
+  time: 61
   remaining: {fileID: 11902943}
+  win: 0
+  loose: 0
+--- !u!114 &472108933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472108928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 489c7bbb2b45bd6418bd86fdff68c8fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  win: {fileID: 631687732}
+  lost: {fileID: 1119603935}
 --- !u!1001 &529481416
 PrefabInstance:
   m_ObjectHideFlags: 0
