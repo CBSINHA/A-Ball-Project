@@ -22,6 +22,8 @@ public class Timer : MonoBehaviour
             remaining.text = ((int)(time / 60f)).ToString() + "m : " + ((int)(time % 60f)).ToString("00") + "s";
             if (child.allcollected) win = true;
         }
-        else loose = true;
+        else {
+            if (!win) loose = true;
+        }
     }
 }
