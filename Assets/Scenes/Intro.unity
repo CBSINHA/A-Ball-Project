@@ -510,6 +510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 704537392}
   - component: {fileID: 704537393}
+  - component: {fileID: 704537394}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -546,6 +547,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   howtoplay: {fileID: 977817189}
   instructions: {fileID: 654124221}
+--- !u!114 &704537394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704537391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed805e91572351648a13bf774a4c5b0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartButton: {fileID: 1646913816}
 --- !u!1 &817539794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,7 +1130,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1646913819}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 704537394}
+        m_TargetAssemblyTypeName: StartGameButton, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1646913819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1380,7 +1406,11 @@ MonoBehaviour:
 
     * You
     can restart the game by pressing the '' Restart '' button after you either win/loose
-    *'
+    *
+
+
+    * You can come back to this screen after you win/loose the game by pressing
+    the '' Home '' button *'
 --- !u!222 &1851412377
 CanvasRenderer:
   m_ObjectHideFlags: 0
