@@ -576,7 +576,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1490,25 +1490,25 @@ MonoBehaviour:
 
 
     INTERFACE: 
-    Top right of the screen shows the time that remains to collect all the coins
-    and the top left shows your score.
+    Top right of the screen will show the time that remains to collect all the coins
+    and the top left will show your score.
 
 
-    POINTS: Every coin collected gives you
-    5 points and every coin stack gives you 100.
+    POINTS: Every coin collected gives
+    you 5 points and every coin stack gives you 100.
 
 
-    * If you collect all the coins
-    before the timer runs out you win the game otherwise you loose *
+    * If you collect all the
+    coins before the timer runs out you win the game otherwise you loose *
 
 
-    * You
-    can restart the game by pressing the '' Restart '' button after you either win/loose
     *
+    You can restart the game by pressing the '' Restart '' button after you either
+    win/loose *
 
 
-    * You can come back to this screen after you win/loose the game by pressing
-    the '' Home '' button *'
+    * You can come back to the Home screen after you win/loose
+    the game by pressing the '' Home '' button *'
 --- !u!222 &1851412377
 CanvasRenderer:
   m_ObjectHideFlags: 0
